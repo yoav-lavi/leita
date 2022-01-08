@@ -42,7 +42,8 @@ leita <query>
 | less          |                                      |                                 | -term            |                            |                         |
 | required      |                                      |                                 |                  |                            |                         |
 
-Notes: 
+Notes:
+- Only Google syntax is supported at the moment, other syntaxes added as examples
 - Google supports `|` in place of `OR`
 - Stack Overflow supports wildcards, but only inside a word
 
