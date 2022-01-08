@@ -1,4 +1,5 @@
-# Leita
+# Leita <img height=32px width=32px src=https://raw.githubusercontent.com/yoav-lavi/leita/main/leita.svg alt="leita">
+</svg>
 
 A universal search query language that can transpile into specific search provider syntax (currently Google only)
 
@@ -56,3 +57,4 @@ Leita uses the following:
 
 - [Logos](https://github.com/maciejhirsz/logos)
 - [Clap](https://github.com/clap-rs/clap)
+- The search icon is from [Heroicons](https://heroicons.com)
