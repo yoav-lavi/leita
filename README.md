@@ -57,4 +57,7 @@ Leita uses the following:
 
 - [Logos](https://github.com/maciejhirsz/logos)
 - [Clap](https://github.com/clap-rs/clap)
+
+Assets:
+
 - The search icon is from [Heroicons](https://heroicons.com)
