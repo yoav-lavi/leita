@@ -42,7 +42,9 @@ leita <query>
 | less          |                                      |                                 | -term            |                            |                         |
 | required      |                                      |                                 |                  | +term                      |                         |
 
-Note: Bing and Kagi support `|` in place of `OR` and `&` in place of `AND`
+Notes: 
+- Google supports `|` in place of `OR`
+- Bing and Kagi support `|` in place of `OR` and `&` in place of `AND`
 
 ### Examples
 
