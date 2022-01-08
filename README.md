@@ -29,7 +29,7 @@ leita <query>
 
 | **Concept**   | **Leita**                            | **Google**                      |  **DuckDuckGo**  | **Bing** and **Kagi**      | **Startpage**           |
 | ------------- | ------------------------------------ | ------------------------------- | ---------------- | -------------------------- | ----------------------- |
-| exact         | "term"                               | "term"                          |                  | "term"                     | "term"                  |
+| exact         | "term"                               | "term"                          | "term"           | "term"                     | "term"                  |
 | and           | first & second                       | first AND second                |                  | first AND second           |                         |   
 | or            | first \| second                      | first OR second                 |                  | first OR second            | first OR second         |    
 | not           | !term                                | \-term                          |                  | \-term                     | \-term                  |
