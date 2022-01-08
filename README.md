@@ -40,7 +40,6 @@ leita <query>
 | escaped       | \token                               |                                 |                  |                            |                         |
 | more          |                                      |                                 | +term            |                            |                         |
 | less          |                                      |                                 | -term            |                            |                         |
-| required      |                                      |                                 |                  |                            |                         |
 
 Notes:
 - Only Google syntax is supported at the moment, other syntaxes added as examples
