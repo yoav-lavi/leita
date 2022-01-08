@@ -31,7 +31,8 @@ leita <query>
 
 ### Examples
 
-- `(dog | cat | wolf | yeti) shampoo 2021-2022 !lavender` → `(dog OR cat OR wolf OR yeti) shampoo 2021..2022 -lavender`
+- `(dog | cat | wolf | yeti) shampoo 2021-2022 "great!" !lavender home\-made` → `(dog OR cat OR wolf OR yeti) shampoo 2021..2022 "great!" -lavender home-made`
+  - Note that tokens in quotes need not be escaped
 
 ## Acknowledgements
 
