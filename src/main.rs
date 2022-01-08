@@ -12,7 +12,7 @@ enum Token {
     #[token("*")]
     Wildcard,
 
-    #[regex("[0-9]+-[0-9]+")]
+    #[regex("[0-9]+\\s-\\s[0-9]+")]
     Range,
 
     #[regex("\"([^\"]*)\"")]
@@ -88,7 +88,7 @@ fn main() {
             Token::And => String::from("AND"),
             Token::Or => String::from("OR"),
             Token::Not => lex_slice_format_remove_leading!("-{}", lex),
-            Token::Range => lex_slice_replace!("-", "..", lex),
+            Token::Range => lex_slice_replace!(" - ", "..", lex),
             Token::Distance => lex_slice_format!("AROUND({})", lex),
             _ => lex.slice().to_string(),
         };
