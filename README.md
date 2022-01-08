@@ -1,7 +1,7 @@
 # Leita <img height=32px width=32px src=https://raw.githubusercontent.com/yoav-lavi/leita/main/leita.svg alt="leita">
 </svg>
 
-A universal search query language that can transpile into specific search provider syntax (currently only Google syntax is supported, parts of Bing and Kagi syntax are supported since they are equivalent to Google)
+A universal search query language that can transpile into specific search provider syntax (currently only Google supported)
 
 A personal project to explore Rust and lexers
 
