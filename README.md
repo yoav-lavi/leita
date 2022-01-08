@@ -22,6 +22,11 @@ Leita means "to seek" or "to search" in Old Norse and many descendant languages
 | distance      | first ~count second                  | first AROUND(count) second             |
 | escaped       | \token                               |                                        |
 
+
+### Examples
+
+- `(dog | cat | wolf | yeti) shampoo 2021-2022 !lavender` → `(dog OR cat OR wolf OR yeti) shampoo 2021..2022 -lavender`
+
 ## Acknowledgements
 
 Leita uses the following:
