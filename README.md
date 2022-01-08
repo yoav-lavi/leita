@@ -27,7 +27,7 @@ leita <query>
 
 ## Syntax
 
-| **Concept**   | **Leita**                            | **Google**                             |
+| **Concept**   | **Leita**                            | **Google Search**                      |
 | ------------- | ------------------------------------ | -------------------------------------- |
 | exact         | "term"                               | "term"                                 |
 | and           | first & second                       | first AND second                       |
