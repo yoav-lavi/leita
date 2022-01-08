@@ -34,6 +34,7 @@ leita <query>
 - `(dog | cat | wolf | yeti) shampoo 2021-2022 "great!" !lavender home-made` → `(dog OR cat OR wolf OR yeti) shampoo 2021..2022 "great!" -lavender home-made`
   - Tokens in quotes need not be escaped
   - Ranges are `number-number` only
+- `good ~5 dog` → `good AROUND(5) dog`
 
 ## Not Supported
 
