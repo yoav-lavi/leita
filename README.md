@@ -42,6 +42,8 @@ leita <query>
 | less          |                                      |                                 | -term            |                            |
 | required      |                                      |                                 |                  | +term                      |
 
+Note: Bing and Kagi support `|` in place of `OR` and `&` in place of `AND`
+
 ### Examples
 
 - `(dog | cat | wolf | yeti) shampoo 2021-2022 "great!" !lavender home-made` → `(dog OR cat OR wolf OR yeti) shampoo 2021..2022 "great!" -lavender home-made`
