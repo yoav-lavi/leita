@@ -16,8 +16,6 @@ leita <query>
 
 ## Syntax
 
-Note: may change in the future
-
 | **Concept**   | **Leita**                            | **Google**                             |
 | ------------- | ------------------------------------ | -------------------------------------- |
 | exact         | "term"                               | "term"                                 |
@@ -26,14 +24,14 @@ Note: may change in the future
 | not           | !term                                | \-term                                 |
 | one of        | (first \| second \| third)           | (first OR second OR third)             |
 | wildcard      | first * second                       | first * second                         |
-| numeric range | start-end                            | start..end                             |
+| numeric range | start - end                          | start..end                             |
 | distance      | first ~count second                  | first AROUND(count) second             |
 | escaped       | \token                               |                                        |
 
 
 ### Examples
 
-- `(dog | cat | wolf | yeti) shampoo 2021-2022 "great!" !lavender home\-made` → `(dog OR cat OR wolf OR yeti) shampoo 2021..2022 "great!" -lavender home-made`
+- `(dog | cat | wolf | yeti) shampoo 2021 - 2022 "great!" !lavender` → `(dog OR cat OR wolf OR yeti) shampoo 2021..2022 "great!" -lavender home-made`
   - Note that tokens in quotes need not be escaped
 
 ## Acknowledgements
