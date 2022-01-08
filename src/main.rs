@@ -61,13 +61,6 @@ macro_rules! lex_slice_format_remove_leading {
     }};
 }
 
-macro_rules! lex_slice_format {
-    ($format_string: expr, $lex: expr) => {{
-        let slice = $lex.slice();
-        format!($format_string, slice)
-    }};
-}
-
 macro_rules! lex_slice_replace {
     ($from: expr, $to: expr, $lex: expr) => {{
         let slice = $lex.slice();
@@ -89,7 +82,7 @@ fn main() {
             Token::Or => String::from("OR"),
             Token::Not => lex_slice_format_remove_leading!("-{}", lex),
             Token::Range => lex_slice_replace!("-", "..", lex),
-            Token::Distance => lex_slice_format!("AROUND({})", lex),
+            Token::Distance => lex_slice_format_remove_leading!("AROUND({})", lex),
             _ => lex.slice().to_string(),
         };
 
