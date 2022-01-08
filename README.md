@@ -27,20 +27,20 @@ leita <query>
 
 ## Syntax
 
-| **Concept**   | **Leita**                            | **Google**                      |  **DuckDuckGo**  | **Bing** and **Kagi**      | **Startpage**          |
-| ------------- | ------------------------------------ | ------------------------------- | ---------------- | -------------------------- | ---------------------- |
-| exact         | "term"                               | "term"                          |                  | "term"                     | "term"                 |
-| and           | first & second                       | first AND second                |                  | first AND second           |                        |   
-| or            | first \| second                      | first OR second                 |                  | first OR second            | first OR second        |    
-| not           | !term                                | \-term                          |                  | (first OR second OR third) |                        |
-| one of        | (first \| second \| third)           | (first OR second OR third)      |                  | \-term                     | \-term                 |
-| wildcard      | first * second                       | first * second                  |                  |                            |                        |
-| numeric range | start-end                            | start..end                      |                  |                            |                        |
-| distance      | first ~count second                  | first AROUND(count) second      |                  |                            |                        |
-| escaped       | \token                               |                                 |                  |                            |                        |
-| more          |                                      |                                 | +term            |                            |                        |
-| less          |                                      |                                 | -term            |                            |                        |
-| required      |                                      |                                 |                  | +term                      |                        |
+| **Concept**   | **Leita**                            | **Google**                      |  **DuckDuckGo**  | **Bing** and **Kagi**      | **Startpage**           |
+| ------------- | ------------------------------------ | ------------------------------- | ---------------- | -------------------------- | ----------------------- |
+| exact         | "term"                               | "term"                          |                  | "term"                     | "term"                  |
+| and           | first & second                       | first AND second                |                  | first AND second           |                         |   
+| or            | first \| second                      | first OR second                 |                  | first OR second            | first OR second         |    
+| not           | !term                                | \-term                          |                  | \-term                     | \-term                  |
+| one of        | (first \| second \| third)           | (first OR second OR third)      |                  | (first OR second OR third) | first OR second OR third|
+| wildcard      | first * second                       | first * second                  |                  |                            |                         |
+| numeric range | start-end                            | start..end                      |                  |                            |                         |
+| distance      | first ~count second                  | first AROUND(count) second      |                  |                            |                         |
+| escaped       | \token                               |                                 |                  |                            |                         |
+| more          |                                      |                                 | +term            |                            |                         |
+| less          |                                      |                                 | -term            |                            |                         |
+| required      |                                      |                                 |                  | +term                      |                         |
 
 Note: Bing and Kagi support `|` in place of `OR` and `&` in place of `AND`
 
