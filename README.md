@@ -1,7 +1,7 @@
 # Leita <img height=32px width=32px src=https://raw.githubusercontent.com/yoav-lavi/leita/main/leita.svg alt="leita">
 </svg>
 
-A universal search query language that can transpile into specific search provider syntax (currently only Google syntax is supported)
+A universal search query language that can transpile into specific search provider syntax (currently only Google syntax is supported, parts of Bing and Kagi syntax are supported since they are equivalent to Google)
 
 A personal project to explore Rust and lexers
 
@@ -27,18 +27,20 @@ leita <query>
 
 ## Syntax
 
-| **Concept**   | **Leita**                            | **Google**                             |
-| ------------- | ------------------------------------ | -------------------------------------- |
-| exact         | "term"                               | "term"                                 |
-| and           | first & second                       | first AND second                       |
-| or            | first \| second                      | first OR second                        |
-| not           | !term                                | \-term                                 |
-| one of        | (first \| second \| third)           | (first OR second OR third)             |
-| wildcard      | first * second                       | first * second                         |
-| numeric range | start-end                            | start..end                             |
-| distance      | first ~count second                  | first AROUND(count) second             |
-| escaped       | \token                               |                                        |
-
+| **Concept**   | **Leita**                            | **Google**                      |  **DuckDuckGo**  | **Bing** and **Kagi**      |
+| ------------- | ------------------------------------ | ------------------------------- | ---------------- | -------------------------- |
+| exact         | "term"                               | "term"                          |                  | "term"                     |
+| and           | first & second                       | first AND second                |                  | first AND second           |
+| or            | first \| second                      | first OR second                 |                  | first OR second            |
+| not           | !term                                | \-term                          |                  | (first OR second OR third) |
+| one of        | (first \| second \| third)           | (first OR second OR third)      |                  | \-term                     |
+| wildcard      | first * second                       | first * second                  |                  |                            |
+| numeric range | start-end                            | start..end                      |                  |                            |
+| distance      | first ~count second                  | first AROUND(count) second      |                  |                            |
+| escaped       | \token                               |                                 |                  |                            |
+| more          |                                      |                                 | +term            |                            |
+| less          |                                      |                                 | -term            |                            |
+| required      |                                      |                                 |                  | +term                      |
 
 ### Examples
 
