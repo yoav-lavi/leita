@@ -16,6 +16,8 @@ leita <query>
 
 ## Syntax
 
+Note: may change in the future
+
 | **Concept**   | **Leita**                            | **Google**                             |
 | ------------- | ------------------------------------ | -------------------------------------- |
 | exact         | "term"                               | "term"                                 |
