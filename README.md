@@ -8,6 +8,12 @@ A personal project to explore Rust and lexers
 
 Leita means _"to seek"_ or _"to search"_ in Old Norse and many descendant languages
 
+## Install
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```sh
