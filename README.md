@@ -1,6 +1,6 @@
 # Leita
 
-A search query language that can transpile into specific search provider syntax (currently Google only)
+A universal search query language that can transpile into specific search provider syntax (currently Google only)
 
 A personal project to explore Rust and lexers
 
