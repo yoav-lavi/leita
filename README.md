@@ -8,7 +8,7 @@ A personal project to explore Rust and lexers
 
 Leita means "to seek" or "to search" in Old Norse and many descendant languages
 
-## Tokens
+## Syntax
 
 | **Concept**   | **Leita**                            | **Google**                             |
 | ------------- | ------------------------------------ | -------------------------------------- |
