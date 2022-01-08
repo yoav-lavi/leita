@@ -14,9 +14,9 @@ Leita means "to seek" or "to search" in Old Norse and many descendant languages
 | ------------- | ------------------------------------ | -------------------------------------- |
 | exact         | "term"                               | "term"                                 |
 | and           | first & second                       | first AND second                       |
-| or            | first | second                       | first OR second                        |
+| or            | first \| second                      | first OR second                        |
 | not           | !term                                | \-term                                 |
-| one of        | (first | second | third)             | (first OR second OR third)             |
+| one of        | (first \| second \| third)           | (first OR second OR third)             |
 | wildcard      | first * second                       | first * second                         |
 | numeric range | start-end                            | start..end                             |
 | distance      | first ~count second                  | first AROUND(count) second             |
