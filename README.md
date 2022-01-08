@@ -35,6 +35,10 @@ leita <query>
   - Tokens in quotes need not be escaped
   - Ranges are `number-number` only
 
+## Not Supported
+
+- At the moment an exact term (`"term"`) cannot have escaped quotes (`"\"term\""`)
+
 ## Acknowledgements
 
 Leita uses the following:
