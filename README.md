@@ -12,6 +12,8 @@ Leita means _"to seek"_ or _"to search"_ in Old Norse and many descendant langua
 
 ### Cargo
 
+Clone this repository and run thw following command in the repository root:
+
 ```sh
 cargo install --path .
 ```
