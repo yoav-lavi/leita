@@ -10,7 +10,7 @@ Leita means _"to seek"_ or _"to search"_ in Old Norse and many descendant langua
 
 ## Install
 
-### Cargo
+### Using Cargo
 
 ```sh
 cargo install --path .
