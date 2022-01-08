@@ -6,7 +6,7 @@ A personal project to explore Rust and lexers
 
 ## Name
 
-Leita means "to seek" or "to search" in Old Norse and many descendant languages
+Leita means _"to seek"_ or _"to search"_ in Old Norse and many descendant languages
 
 ## Syntax
 
