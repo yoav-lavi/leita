@@ -1,7 +1,7 @@
 # Leita <img height=32px width=32px src=https://raw.githubusercontent.com/yoav-lavi/leita/main/leita.svg alt="leita">
 </svg>
 
-A universal search query language that can transpile into specific search provider syntax (currently Google only)
+A universal search query language that can transpile into specific search provider syntax (currently only Google syntax is supported)
 
 A personal project to explore Rust and lexers
 
@@ -13,7 +13,7 @@ Leita means _"to seek"_ or _"to search"_ in Old Norse and many descendant langua
 
 ### Cargo
 
-Clone this repository and run thw following command in the repository root:
+Clone this repository and run the following command in the repository root:
 
 ```sh
 cargo install --path .
@@ -27,18 +27,24 @@ leita <query>
 
 ## Syntax
 
-| **Concept**   | **Leita**                            | **Google**                             |
-| ------------- | ------------------------------------ | -------------------------------------- |
-| exact         | "term"                               | "term"                                 |
-| and           | first & second                       | first AND second                       |
-| or            | first \| second                      | first OR second                        |
-| not           | !term                                | \-term                                 |
-| one of        | (first \| second \| third)           | (first OR second OR third)             |
-| wildcard      | first * second                       | first * second                         |
-| numeric range | start-end                            | start..end                             |
-| distance      | first ~count second                  | first AROUND(count) second             |
-| escaped       | \token                               |                                        |
+| **Concept**   | **Leita**                            | **Google**                      |  **DuckDuckGo**  | **Stack Overflow**         | **GitHub**              |
+| ------------- | ------------------------------------ | ------------------------------- | ---------------- | -------------------------- | ----------------------- |
+| exact         | "term"                               | "term"                          | "term"           | "term"                     |                         |
+| and           | first & second                       | first AND second                |                  |                            |                         |   
+| or            | first \| second                      | first OR second                 |                  | \[first\] OR \[second\]    |                         |    
+| not           | !term                                | \-term                          |                  | \-term                     | NOT term                |
+| one of        | (first \| second \| third)           | (first OR second OR third)      |                  |                            |                         |
+| wildcard      | first * second                       | first * second                  |                  |                            |                         |
+| numeric range | start-end                            | start..end                      |                  | start..end                 | start..end              |
+| distance      | first ~count second                  | first AROUND(count) second      |                  |                            |                         |
+| escaped       | \token                               |                                 |                  |                            |                         |
+| more          |                                      |                                 | +term            |                            |                         |
+| less          |                                      |                                 | -term            |                            |                         |
 
+Notes:
+- Only Google syntax is supported at the moment, other syntaxes added as examples
+- Google supports `|` in place of `OR`
+- Stack Overflow supports wildcards, but only inside a word
 
 ### Examples
 
@@ -57,4 +63,7 @@ Leita uses the following:
 
 - [Logos](https://github.com/maciejhirsz/logos)
 - [Clap](https://github.com/clap-rs/clap)
+
+Assets:
+
 - The search icon is from [Heroicons](https://heroicons.com)
