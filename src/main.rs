@@ -89,5 +89,5 @@ fn main() {
         output.push_str(&formatted_token);
     }
 
-    println!("{}", output)
+    println!("{output}")
 }
